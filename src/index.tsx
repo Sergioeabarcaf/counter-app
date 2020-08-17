@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import CounterApp from './CounterApp/CounterApp';
+import CounterApp from './CounterApp';
 
 const divRoot = document.querySelector('#root');
 
