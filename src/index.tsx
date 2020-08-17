@@ -8,7 +8,7 @@ const divRoot = document.querySelector('#root');
 
 ReactDOM.render(
   <React.StrictMode>
-    <CounterApp value={123} />
+    <CounterApp value={1} />
   </React.StrictMode>,
   divRoot
 );
