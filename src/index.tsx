@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import CounterApp from './CounterApp/CounterApp';
 
 const divRoot = document.querySelector('#root');
 
 ReactDOM.render(
   <React.StrictMode>
-    <App saludo='123' nombre='Sergio'/>
+    <CounterApp value={123} />
   </React.StrictMode>,
   divRoot
 );
