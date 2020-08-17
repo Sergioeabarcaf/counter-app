@@ -8,7 +8,7 @@ const divRoot = document.querySelector('#root');
 
 ReactDOM.render(
   <React.StrictMode>
-    <App saludo='hola!' nombre='Sergio'/>
+    <App saludo='123' nombre='Sergio'/>
   </React.StrictMode>,
   divRoot
 );

@@ -1,18 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-interface Props {
-  saludo: string
-  nombre: string
-}
-
-const App = (props: Props) => {
+const App = ({ saludo = '', nombre = 'sergio'}) => {
   return (
     <>
-      <h1>{ props.saludo }</h1>
-      <h2>{ props.nombre }</h2>
-      <p>Esto es una salida</p>
+      <h1>{ saludo }</h1>
+      <p>{ nombre }</p>
     </>
   );
 }
