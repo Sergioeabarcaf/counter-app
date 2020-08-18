@@ -23,7 +23,16 @@ describe('prueba sobre CounterApp', () => {
 
         const textoEnCounterApp = wrapper.find('h1').text();
 
-        expect( textoEnCounterApp ).toBe(mensaje);
+        expect( textoEnCounterApp ).toBe(mensaje);  
 
     });
+
+    test('debe mostrar el valor por defecto de 100', () => {
+        const value = 100;
+        const wrapper = shallow( <CounterApp value={value}/> );
+
+        const valueEnCounterApp = wrapper.find('h2').text();
+        
+        expect(valueEnCounterApp).toBe(value.toString());
+    })
 });
