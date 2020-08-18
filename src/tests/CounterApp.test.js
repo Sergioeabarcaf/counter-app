@@ -10,11 +10,20 @@ describe('prueba sobre CounterApp', () => {
     //     expect( getByText(mensaje) ).toBeInTheDocument();
     // });
 
-    test('debe de mostrar el mensaje CounterApp', () => {
-        const mensaje = 'CounterApp';
+    test('debe de renderizar la CounterApp', () => {
         const wrapper = shallow( <CounterApp />);
 
         expect( wrapper ).toMatchSnapshot();
+
+    });
+
+    test('debe validar el mensaje de CounterApp en H1', () => {
+        const mensaje = 'CounterApp';
+        const wrapper = shallow(<CounterApp />);
+
+        const textoEnCounterApp = wrapper.find('h1').text();
+
+        expect( textoEnCounterApp ).toBe(mensaje);
 
     });
 });
