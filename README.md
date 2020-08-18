@@ -4,3 +4,4 @@ App in React, development in course [React: De cero a experto ( Hooks y MERN )](
 
 ## Content
 1. Create CounterApp and use useState.
+2. Make unit test in components with enzyme. 
